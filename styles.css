@@ -109,7 +109,7 @@ main {
 .cart-header {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 0.5rem;
   background-color: #F9F1E7;
   border-radius: 0.2rem;
