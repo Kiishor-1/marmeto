@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <img src="${item.image}" alt="${item.title}">
                 </div>
                 <section class="cart-item-details">
-                  <div>₹${item?.title}</div>
+                  <div>${item?.title}</div>
                   <div>₹${(item.price / 100).toFixed(2)}</div>
                   <div>
                       <input type="number" min="1" value="${item.quantity}" data-index="${index}">
