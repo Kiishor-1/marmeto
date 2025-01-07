@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmeto | Checkout Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="navbar">
+                <a href="/" class="logo">
+                    <img src="./assets/img/Meubel House_Logos-05.png" alt="">
+                    Marmeto
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="cart.html">Cart</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+                <div class="icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <button class="hamburger-menu" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="checkout-section">
+            <div class="checkout_main">
+                <h1>Checkout</h1>
+                <div class="checkout-container">
+                    <div class="checkout-summary">
+                        <h2>Order Summary</h2>
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">₹0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Shipping</span>
+                            <span>Free</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Total</span>
+                            <span id="total">₹0.00</span>
+                        </div>
+                    </div>
+
+                    <form class="checkout-form">
+                        <h2>Billing Details</h2>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                        <label for="address">Address</label>
+                        <textarea id="address" placeholder="Enter your address" required></textarea>
+                        <button type="submit" id="placeOrder" class="place-order-button">Place Order</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-content">
+                <div class="footer-item">
+                    <section>
+                        <img src="./assets/img/trophy 1.png" alt="High Quality">
+                        <span>High Quality</span>
+                    </section>
+                    <p>crafted from top materials</p>
+                </div>
+                <div class="footer-item">
+                    <section>
+                        <img src="./assets/img/Group.png" alt="Warranty Protection">
+                        <span>Warranty Protection</span>
+                    </section>
+                    <p>Over 2 years</p>
+                </div>
+                <div class="footer-item">
+                    <section>
+                        <img src="./assets/img/shipping.png" alt="Free Shipping">
+                        <span>Free Shipping</span>
+                    </section>
+                    <p>Order over 150 $</p>
+                </div>
+                <div class="footer-item">
+                    <section>
+                        <img src="./assets/img/customer-support.png" alt="24/7 Support">
+                        <span>24 / 7 Support</span>
+                    </section>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/checkout.js"></script>
+</body>
+
+</html>
