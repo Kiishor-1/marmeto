@@ -20,8 +20,8 @@
                     Marmeto
                 </a>
                 <nav class="nav">
-                    <a href="index.html">Home</a>
-                    <a href="cart.html">Cart</a>
+                    <a href="#">Home</a>
+                    <a href="#">Shop</a>
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                 </nav>
@@ -103,6 +103,14 @@
             </div>
         </footer>
     </div>
+    <script>
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const navMenu = document.querySelector(".nav");
+
+    hamburgerMenu.addEventListener("click", () => {
+        navMenu.classList.toggle("show");
+    });
+    </script>
     <script src="./js/checkout.js"></script>
 </body>
 
